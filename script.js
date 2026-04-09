@@ -118,3 +118,25 @@ document.getElementById("contadorVisitas").innerText = visitas;
 
 // INICIO
 actualizar();
+// -------------------
+// DOLAR API
+// -------------------
+let dolar = 0;
+
+fetch("https://api.bluelytics.com.ar/v2/latest")
+  .then(res => res.json())
+  .then(data => {
+    dolar = data.blue.value_sell;
+    document.getElementById("valorDolar").innerText = "$" + dolar;
+  });
+
+function convertir() {
+  let pesos = document.getElementById("pesos").value;
+
+  if (pesos === "" || dolar === 0) return;
+
+  let resultado = pesos / dolar;
+
+  document.getElementById("resultadoDolar").innerText =
+    "USD: " + resultado.toFixed(2);
+}
