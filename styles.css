@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial;
+  background: #f0f2f5;
+}
+
+/* HEADER */
+header {
+  background: #111;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  color: white;
+  margin: 5px 10px;
+  text-decoration: none;
+}
+
+/* MENU BTN */
+#menuBtn {
+  display: none;
+  font-size: 22px;
+  background: none;
+  color: white;
+  border: none;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+}
+
+/* TARJETAS */
+.tool {
+  background: white;
+  margin: 20px auto;
+  padding: 25px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* INPUT */
+.tool input {
+  padding: 12px;
+  width: 90%;
+  max-width: 250px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* BOTONES */
+.tool button {
+  padding: 12px 18px;
+  margin: 5px;
+  background: #0072ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.tool button:hover {
+  background: #005ccc;
+  transform: scale(1.05);
+}
+
+/* MENSAJES */
+#mensaje {
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+}
+
+/* RESULTADO */
+#resultado {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+/* ADS */
+.ads {
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ddd;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* VISITAS */
+.visitas {
+  text-align: center;
+  padding: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 600px) {
+
+  #menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #menuBtn {
+    display: block;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+}

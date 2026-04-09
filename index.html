@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ClickTools</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>💸 ClickTools</h1>
+
+  <button id="menuBtn">☰</button>
+
+  <nav id="menu">
+    <a href="#">Inicio</a>
+    <a href="#">Herramientas</a>
+    <a href="#">Juegos</a>
+    <a href="#">Donar</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Herramientas + Juegos para tu día</h2>
+  <p>Usá, jugá y mejorá tu economía</p>
+</section>
+
+<!-- CALCULADORA -->
+<section class="tool">
+  <h2>💵 Calculadora de Sueldo</h2>
+
+  <input type="number" id="bruto" placeholder="Ingresá tu sueldo bruto">
+  <button onclick="calcularSueldo()">Calcular</button>
+
+  <div id="resultado"></div>
+</section>
+
+<!-- PUBLICIDAD -->
+<div class="ads">
+  <p>Publicidad</p>
+</div>
+
+<!-- JUEGO -->
+<section class="tool">
+  <h2>🎮 Juego Clicker</h2>
+
+  <h3 id="puntos">Puntos: 0</h3>
+
+  <button onclick="clickJuego()">CLICK</button>
+
+  <br><br>
+
+  <button onclick="mejora()">Mejora (+1) - 10 pts</button>
+  <button onclick="auto()">Auto (+1/s) - 50 pts</button>
+
+  <br><br>
+
+  <button onclick="resetear()">Resetear progreso</button>
+
+  <p id="mensaje"></p>
+</section>
+
+<!-- DONACIÓN -->
+<section class="tool">
+  <h2>💳 Apoyá la página</h2>
+  <p>Si te sirvió, podés ayudarme a seguir mejorándola y seguir creciendo</p>
+
+  <a href="https://link.mercadopago.com.ar/clicktools" target="_blank">
+    <button>Donar</button>
+  </a>
+</section>
+
+<!-- VISITAS -->
+<div class="visitas">
+  👀 Visitas: <span id="contadorVisitas"></span>
+</div>
+
+<footer>
+  <p>© 2026 - Diseñada para vos</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
